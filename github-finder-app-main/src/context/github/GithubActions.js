@@ -3,8 +3,8 @@ const GITHUB_URL = process.env.REACT_APP_GITHUB_URL
 const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN
 
 const github = axios.create({
-  baseURL: GITHUB_URL,
-  headers: { Authorization: `token ${GITHUB_TOKEN}` },
+  baseURL: 'https://api.github.com',
+  headers: { Authorization: `token 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` },
 })
 
 // Get search results
